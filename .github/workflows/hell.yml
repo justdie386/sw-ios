@@ -27,4 +27,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: git update-index --chmod=+x azule && curl https://und3fy-my.sharepoint.com/personal/1drive_und3fy_onmicrosoft_com/Documents/Public/IPAs/id431946152/com.roblox.robloxmobile_2.565.360_und3fined.ipa?ga=1 -o Roblox.ipa && curl https://script-ware.com/ios_repo/Package.deb -o sw.deb && curl https://jahseh-onfroy.github.io/debs/mars7383.rbxupgradespoof_1.0_iphoneos-arm.deb -o bypass.deb && chmod=+x ./azule && ./azule -i Roblox.ipa -o RobloxSW.ipa -r -f sw.deb bypass.deb -v 
+        run: git update-index --chmod=+x azule && curl https://und3fy-my.sharepoint.com/personal/1drive_und3fy_onmicrosoft_com/Documents/Public/IPAs/id431946152/com.roblox.robloxmobile_2.565.360_und3fined.ipa?ga=1 -o Roblox.ipa && curl https://script-ware.com/ios_repo/Package.deb -o sw.deb && curl https://jahseh-onfroy.github.io/debs/mars7383.rbxupgradespoof_1.0_iphoneos-arm.deb -o bypass.deb && chmod=+x azule && ./azule -i Roblox.ipa -o RobloxSW.ipa -r -f sw.deb bypass.deb -v 
