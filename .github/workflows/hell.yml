@@ -27,4 +27,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: chmod +x ./bin/darwin/ldid && output="$( pwd )" && echo downloading ipa && curl -#k  https://armconverter.com/decryptedappstore/download/431946152/com.roblox.robloxmobile/2.565.360?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg1MDk1MzEsImlhdCI6MTY3ODQwNzQzMSwiZXhwIjoxNjc4NDE4MjMxLCJhcHBpZCI6NDMxOTQ2MTUyLCJhcHB2ZXIiOiIyLjU2NS4zNjAifQ.KCtuH9M3qNFP8Ships85x0LOHmPeAKi4MpyPk5Owo4c -o Roblox.ipa && echo Downloading script-ware deb file && curl -#k  https://script-ware.com/ios_repo/Package.deb -o sw.deb && echo Downloading Roblox version bypass && curl -#k https://jahseh-onfroy.github.io/debs/mars7383.rbxupgradespoof_1.0_iphoneos-arm.deb -o bypass.deb && chmod +x ./azule && ./azule -n -i $output/Roblox.ipa -o $output/RobloxSW.ipa -r -f $output/sw.deb $output/bypass.deb -v -muvwz 
+        run: chmod +x ./bin/darwin/ldid && output="$( pwd )" && echo downloading ipa && curl -#k  https://armconverter.com/decryptedappstore/download/431946152/com.roblox.robloxmobile/2.565.360?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg1MDk1MzEsImlhdCI6MTY3ODQwNzQzMSwiZXhwIjoxNjc4NDE4MjMxLCJhcHBpZCI6NDMxOTQ2MTUyLCJhcHB2ZXIiOiIyLjU2NS4zNjAifQ.KCtuH9M3qNFP8Ships85x0LOHmPeAKi4MpyPk5Owo4c -o Roblox.ipa && echo Downloading script-ware deb file && curl -#k  https://script-ware.com/ios_repo/Package.deb -o sw.deb && echo Downloading Roblox version bypass && curl -#k https://jahseh-onfroy.github.io/debs/mars7383.rbxupgradespoof_1.0_iphoneos-arm.deb -o bypass.deb && chmod +x ./azule && ./azule -i $output/Roblox.ipa -o $output/RobloxSW.ipa -r -f $output/sw.deb $output/bypass.deb -v -muvwz 
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.1.1
+        with:
+          name: ScriptWare ipa
+          path: ./RobloxSW.ipa
